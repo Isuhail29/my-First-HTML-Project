@@ -232,7 +232,7 @@ display: block;
 position: absolute;
 width: 54px;
 height: 60px;
-background: url(img/ghost-guy.png) no repeat 0 0;
+background:url(img/ghost-guy.png); no repeat 0 0;
 background-size: 100%;
 bottom: -30px;
 left: 60%;
