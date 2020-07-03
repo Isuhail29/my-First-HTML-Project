@@ -102,8 +102,14 @@ button.cta {
   padding: 20px 30px;
   border-radius: 10px;
   text-decoration: none;
+  outline: none;
+  border: none;
+  cursor: pointer;
 }
-
+a.cta:active,
+button.cta:active{
+  opacity: .7;
+}
 a.cta.alt,
 button.cta.alt {
   background-color: #ffd400;
@@ -117,6 +123,7 @@ background-color: #ffffff;
 box-shadow: 0 5px 8px rgba(0,0,0,.2);
 position: sticky;
 top: 0;
+z-index: 1;
 }
 nav .logo{
   display: block;
@@ -170,13 +177,106 @@ text-align: center;
   display: inline;
   font-weight: 800;
 }
+.sep{
+  width: 470px;
+  height: 10px;
+  background-color: #111111;
+  margin: 70px auto;
+}
+.story h3{
+  font-size: 40px;
+  font-weight: 800;
+}
 
+.nb-list{
+  width: 470px;
+  padding: 20px 20px 0 20px;
+  box-sizing: border-box;
+  background-color: #ededed;
+  float: left;
+  margin: 0 20px 20px 0;
+  position: relative;
+
+}
+.nb-list li{
+  height: 70px;
+  border-radius: 10px;
+  font-size: 40px;
+  color: white;
+  font-weight: bold;
+  display: block;
+  margin-bottom: 20px;
+  padding: 6px 20px;
+  box-sizing: border-box;
+}
+.nb-list li.red{ background-color: #ff3300;}
+.nb-list li.Blue{ background-color: #007fff;}
+.nb-list li.gray{ background-color: rgba(0,0,0,.1);}
+.nb-list li.Yellow{
+  background-color: #ffd400;
+  color: #111111;
+}
+.nb-list li.pink{ background-color: #ffadf9;}
+.nb-list li.salmon{ background-color: #fa8072;}
+.nb-list li.dragging{
+  position: absolute;
+  top: 70px;
+  left: 70px;
+  right: -30px;
+  transform: rotate(6deg);
+  box-shadow: 0 2px 14px rgba(0,0,0,.3);
+}
+.nb-list li.dragging::after{
+content: '';
+display: block;
+position: absolute;
+width: 54px;
+height: 60px;
+background: url(img/ghost-guy.png) no repeat 0 0;
+background-size: 100%;
+bottom: -30px;
+left: 60%;
+}
+.gang-img{
+  display: block;
+  margin: 0 auto;
+}
+footer{
+  text-align: center;
+  color: rgba(0,0,0,.4);
+  font-size: 20px;
+  margin: 85px 0 45px;
+  font-weight: bold;
+}
+footer a{
+  color: rgba(0,0,0,.4);
+}
+.popup{
+  display: none;
+}
 /*
-<div class="more-info" id="more-info">
-  <H2>Join Our Fan Club</H2>
-  <p>Every week we have <span class="highlight">a Party.</span> If you want to join us then join our fan club. Members will also receive pictures
-    of us in all kinds of shapes and sizes. Cool huh?</p>
-  <Button class="cta">Sign Me Up!</Button>
+<div class="sep"> </div>
+<div class="story" id="Story">
+  <ul class="nb-list">
+    <li class="Blue">Rock 'n Roll</li>
+    <li class="gray"></li>
+    <li class="Yellow dragging">Laughter</li>
+    <li class="red">Square Off's</li>
+    <li class="pink">Circuter Routes</li>
+    <li class="salmon">Trigonamatery</li>
+    <li class="Blue">Rad hats</li>
+    <li class="yellow">Being Silly</li>
+  </ul>
+  <H3>Left: Things we find Important <br />
+    Below: our story</H3>
+  <p>Once Upon a time there was a group of shapes. The were mostly black and rectanglar. They were Mean and
+    very seroius.</p>
+  <p> And so they kicked the three shapes that didn't conform out of their gang,
+    Which was called the Right angled Gang.</p>
+  <p> And so these three shapes were very said and found comfort being around each other.
+    They soon started having a lot of fun. Started rocking and rolling, Started being silly,
+    and became the most well known shap gang in the universe.</p>
+  <p>they even started making fun of squars and ractangles in what they like to call square Off's!</p>
 </div>
 
 */
