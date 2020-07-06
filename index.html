@@ -27,7 +27,7 @@
   <nav>
     <a href="#" class="logo">The Gang</a>
     <ul>
-      <li><a href="#">Sign Up</a></li>
+      <li><a href="javascript:()" onclick="showPopup();">Sign Up</a></li>
       <li><a href="#Story">The Story</a></li>
       <li><a href="#more-info">More Info</a></li>
     </ul>
@@ -37,7 +37,7 @@
       <H2>Join Our Fan Club</H2>
       <p>Every week we have <span class="highlight">a Party.</span> If you want to join us then join our fan club. Members will also receive pictures
         of us in all kinds of shapes and sizes. Cool huh?</p>
-      <Button class="cta">Sign Me Up!</Button>
+      <Button class="cta" onclick="showPopup();">Sign Me Up!</Button>
     </div>
   </div>
   <div class="sep"> </div>
@@ -72,11 +72,12 @@
     Made by Rich from <a href="https://sohailfarooq.in">Tap Tap Kaboom</a>
     </div>
   </footer>
-  <div class="popup">
+  <div class="popup" id="popup">
     <div class="blanket"> </div>
     <div class="content">
       <h2>Fill In Your Details</h2>
       <form class="" action="index.html" method="post">
+        <div class="row">
         <div class="item">
           <label>Your First name</label>
           <input type="text" placeholder="Awesomeface" value="shirley">
@@ -84,7 +85,9 @@
         <div class="item">
           <label>Your last name</label>
           <input type="text" placeholder="Circleface">
+          </div>
         </div>
+        <div class="row">
         <div class="item">
           <label>Your Favourite color</label>
           <input type="text" placeholder="Pink">
@@ -92,12 +95,16 @@
         <div class="item">
           <label>Your Favourite Food</label>
           <input type="text" placeholder="Apple Pie">
+          </div>
         </div>
         <button class="cta">I want In!</button>
       </form>
-      <button class="close">Close</button>
+      <button class="close" onclick="hidePopup();">Close</button>
     </div>
   </div>
+  <script src="script.js" type="text/javascript">
+
+  </script>
 </body>
 
 </html>
